@@ -1,29 +1,39 @@
 <template>
     <div class="container-body">
-        <div>
+        <div class="hero-top">
             {{ msg }}
         </div>
-        <div>
+        <div class="hero-bottom">
             <ul class="list-group">
                 <li class="list-item">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="digital-comics">
-                    <span>digital comics</span>
+                    <div>
+                        <img src="../assets/buy-comics-digital-comics.png" alt="digital-comics">
+                        <span>digital comics</span>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="../assets/buy-comics-merchandise.png" alt="merchandise">
-                    <span>digital comics</span>
+                    <div>
+                        <img src="../assets/buy-comics-merchandise.png" alt="merchandise">
+                        <span>merchandise</span>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="../assets/buy-comics-subscriptions.png" alt="subscriptions">
-                    <span>digital comics</span>
+                    <div>
+                        <img src="../assets/buy-comics-subscriptions.png" alt="subscriptions">
+                        <span>subscriptions</span>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="../assets/buy-comics-shop-locator.png" alt="shop-locator">
-                    <span>digital comics</span>
+                    <div>
+                        <img src="../assets/buy-comics-shop-locator.png" alt="shop-locator">
+                        <span>shop-locator</span>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="../assets/buy-dc-power-visa.png" alt="dc-power-visa">
-                    <span>digital comics</span>
+                    <div>
+                        <img src="../assets/buy-dc-power-visa.svg" alt="dc-power-visa">
+                        <span>dc-power-visa</span>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -41,20 +51,27 @@ export default {
 </script>
   
 <style>
-.container-body div:first-child,
-.container-body div:last-child {
-    height: 125px;
+img {
+    height: 100%;
+}
+
+.container-body {
+    height: calc(100% - 280px);
+}
+
+.container-body div {
+    height: 250px;
     display: flex;
     align-items: center;
 }
 
-.container-body div:first-child {
+.hero-top {
     font-size: 24px;
     font-weight: 900;
     background-color: #1c1c1c;
 }
 
-.container-body div:last-child {
+.hero-bottom {
     background-color: #0282f9;
     display: flex;
     align-items: center;
@@ -66,14 +83,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    font-weight: 400;
     gap: 25px;
 }
 
-.list-item img {
-    width: 50px;
-}
-
-.list-item span {
-    text-transform: uppercase;
+.list-group div {
+    height: 70px;
+    gap: 10px;
 }
 </style>
