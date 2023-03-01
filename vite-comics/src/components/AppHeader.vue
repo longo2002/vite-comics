@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blu">
+    <div class="bg-white">
         {{ msg }}
     </div>
 </template>
@@ -8,14 +8,16 @@
 export default {
     data() {
         return {
-            msg: "Questo è il footer"
+            msg: "Questo è l' header"
         }
     }
 }
 </script>
   
 <style>
-.bg-blu {
-    background-color: #0282f9;
+.bg-white {
+    background-color: #ffffff;
+    color: #0282f9;
 }
 </style>
+  
