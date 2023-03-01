@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-header">
         <div>
             <img src="../assets/dc-logo.png" alt="">
             <ul class="nav-bar">
@@ -22,21 +22,17 @@
 export default {
     data() {
         return {
-            msg: "Questo è l' header"
         }
     },
     methods: {
-        helloFunction() {
-            console.log('Ciao!')
-        }
     }
 }
 </script>
   
 <style>
-.container div {
-    width: 1250px;
-    padding: 10px;
+.container-header div {
+    height: 125px;
+    padding: 15px 30px;
     background-color: #ffffff;
     color: black;
     display: flex;
@@ -50,6 +46,10 @@ export default {
     gap: 15px;
     text-transform: uppercase;
     font-weight: 750;
+}
+
+.nav-bar li:hover {
+    color: #0282f9;
 }
 </style>
   

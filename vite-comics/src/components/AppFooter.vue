@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blu">
+    <div class="container-footer">
         {{ msg }}
     </div>
 </template>
@@ -15,7 +15,8 @@ export default {
 </script>
   
 <style>
-.bg-blu {
-    background-color: #0282f9;
+.container-footer {
+    background-color: #02f969;
+    height: 125px;
 }
 </style>
