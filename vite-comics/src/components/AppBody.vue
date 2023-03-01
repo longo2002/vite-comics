@@ -75,8 +75,5 @@ export default {
 
 .list-item span {
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 25px;
 }
 </style>
