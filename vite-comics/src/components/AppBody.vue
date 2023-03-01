@@ -70,10 +70,13 @@ export default {
 }
 
 .list-item img {
-    width: 60px;
+    width: 50px;
 }
 
 .list-item span {
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 </style>
