@@ -5,7 +5,8 @@ import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
-  <AppHeader></AppHeader>
+  <AppHeader>
+  </AppHeader>
   <AppBody></AppBody>
   <AppFooter></AppFooter>
 </template>

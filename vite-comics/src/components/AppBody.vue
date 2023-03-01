@@ -10,7 +10,7 @@ export default {
         return {
             msg: "Questo è il body"
         }
-    }
+    },
 }
 </script>
   
